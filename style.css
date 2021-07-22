@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #674baf;
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.logo {
+  width: 125px;
+  margin: 38px 0;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.title {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 60%;
+  height: 40px;
+  margin: 30px auto;
+  background-color: #fff;
+  color: #674baf;
+  font-size: 14px;
+  border-style: none;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+  transition: all .2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #e882e8;
+  color: white;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.fab {
+  color: white;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: top;
+  line-height: 28px !important;
+  margin: 0 5px;
+}
+
+.fab:hover {
+  color: #e882e8;
+  border: 1px solid #e882e8;
+  transform: scale(1.03);
+}
+
+footer {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.socials {
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("images/bg-desktop.svg");
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main-container {
+    display: flex;
+    width: 90%;
+    max-width: 1280px;
+    gap: 50px;
+  }
+  .logo {
+    width: 200px;
+    margin-bottom: 60px;
+  }
+  .desktop-left {
+    width: 60%;
+  }
+  .desktop-right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  .title {
+    font-size: 36px;
+    text-align: left;
+  }
+  .text {
+    font-size: 16px;
+    text-align: left;
+  }
+  footer {
+    justify-content: flex-end;
+    justify-self: flex-end;
+  }
+  .btn {
+    width: 30%;
+    margin: 30px 0;
+  }
+}
